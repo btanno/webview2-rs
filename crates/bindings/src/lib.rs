@@ -10,6 +10,7 @@ pub mod Microsoft {
         pub mod WebView2 {
             pub mod Win32 {
                 mod windows_link {
+                    /*
                     macro_rules! link_webview2 {
                         ($library:literal $abi:literal fn $($function:tt)*) => (
                             #[cfg_attr(
@@ -27,6 +28,7 @@ pub mod Microsoft {
                     }
 
                     pub(crate) use link_webview2 as link;
+                    */
                 }
 
                 include!("bindings.rs");
